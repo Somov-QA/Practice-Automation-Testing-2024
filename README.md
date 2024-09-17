@@ -14,19 +14,19 @@
 </p>
 <p>
 	<h4>Ссылки на ресурсы:</h2>
-	Официальный сайт Selenuim: <a href="https://www.selenium.dev/" target="_blank">https://www.selenium.dev/</a><br>
-	Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/" target="_blank">https://www.selenium.dev/downloads/</a><br>
-	Быстрый старт <a href="https://www.selenium.dev/documentation/grid/getting_started/" target="_blank">https://www.selenium.dev/documentation/grid/getting_started/</a><br>
-	Chrome драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable" target="_blank">https://googlechromelabs.github.io/chrome-for-testing/#stable</a><br>
-	Документация <a href="https://www.selenium.dev/documentation/overview/" target="_blank">https://www.selenium.dev/documentation/overview/</a><br>
+	Официальный сайт Selenuim: <a href="https://www.selenium.dev/">https://www.selenium.dev/</a><br>
+	Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/">https://www.selenium.dev/downloads/</a><br>
+	Быстрый старт <a href="https://www.selenium.dev/documentation/grid/getting_started/">https://www.selenium.dev/documentation/grid/getting_started/</a><br>
+	Chrome драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable">https://googlechromelabs.github.io/chrome-for-testing/#stable</a><br>
+	Документация <a href="https://www.selenium.dev/documentation/overview/">https://www.selenium.dev/documentation/overview/</a><br>
 </p>
 <p>
 	<h4>Начало работы с Selenium Grid:</h2>
 	<ul>
-		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html" target="_blank">Java SE Development Kit 11</a></li>
-		<li>Скачать и установить браузер <a href="https://www.google.com/intl/ru/chrome/browser-tools/" target="_blank">Chrome</a></li>
-		<li>Скачать драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable" target="_blank">ChromeDriver</a></li>
-		<li>Скачать jar файл <a href="https://www.selenium.dev/downloads/" target="_blank">Selenium Server</a> или с <a href="https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.24.0" target="_blank">github</a></li>
+		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
+		<li>Скачать и установить браузер <a href="https://www.google.com/intl/ru/chrome/browser-tools/">Chrome</a></li>
+		<li>Скачать драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable">ChromeDriver</a></li>
+		<li>Скачать jar файл <a href="https://www.selenium.dev/downloads/">Selenium Server</a> или с <a href="https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.24.0">github</a></li>
 		<li>Создать папку C:\selenium\ в которую скопировать файлы: <b>selenium-server-4.24.0.jar</b>, <b>chromedriver.exe</b></li>
 		<li>В переменной Path прописать путь к папке C:\selenium
 			<p align="center">
