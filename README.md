@@ -15,7 +15,7 @@
 <p>
 	<h4>Ссылки на ресурсы:</h2>
 	Официальный сайт Selenuim: <a href="https://www.selenium.dev/" target="_blank">https://www.selenium.dev/</a><br>
-	Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/" target="_blank">https://www.selenium.dev/downloads/</a>
+	Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/" target="_blank">https://www.selenium.dev/downloads/</a><br>
 	Быстрый старт <a href="https://www.selenium.dev/documentation/grid/getting_started/" target="_blank">https://www.selenium.dev/documentation/grid/getting_started/</a><br>
 	Chrome драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable" target="_blank">https://googlechromelabs.github.io/chrome-for-testing/#stable</a><br>
 	Документация <a href="https://www.selenium.dev/documentation/overview/" target="_blank">https://www.selenium.dev/documentation/overview/</a><br>
@@ -33,12 +33,18 @@
 				cd C:\selenium
 				java -jar selenium-server-4.24.0.jar standalone
 			</code></pre>
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/folder.jpg">
+			</p>
+		</li>
+		<li>Запустить файл run-selenium.bat
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/console.jpg">
+			</p>
 		</li>
 		<li></li>
 		<li></li>
-		<li></li>
-		<li></li>
+		<li>Чтобы остановить Selenium нажмите в консоли Ctrl+C и затем Y</li>
 	</ul>
 </p>
-
 
