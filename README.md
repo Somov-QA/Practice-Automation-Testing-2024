@@ -28,6 +28,11 @@
 		<li>Скачать драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable" target="_blank">ChromeDriver</a></li>
 		<li>Скачать jar файл <a href="https://www.selenium.dev/downloads/" target="_blank">Selenium Server</a> или с <a href="https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.24.0" target="_blank">github</a></li>
 		<li>Создать папку C:\selenium\ в которую скопировать файлы: <b>selenium-server-4.24.0.jar</b>, <b>chromedriver.exe</b></li>
+		<li>В переменной Path прописать путь к папке C:\selenium
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/path.jpg">
+			</p>
+		</li>
 		<li>В папке C:\selenium\ создать файл <b>run-selenium.bat</b> в котором написать:
 			<pre><code>
 				cd C:\selenium
@@ -42,9 +47,6 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/console.jpg">
 			</p>
 		</li>
-		<li></li>
-		<li></li>
 		<li>Чтобы остановить Selenium нажмите в консоли Ctrl+C и затем Y</li>
 	</ul>
 </p>
-
