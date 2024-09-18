@@ -23,14 +23,12 @@
 		</li>
 		<li>Подключить библиотеку Selenium к проекту <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java">https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java</a>
 			<pre>
-			<xmp>
-<dependency>
-	<groupId>org.seleniumhq.selenium</groupId>
-	<artifactId>selenium-java</artifactId>
-	<version>4.24.0</version>
-</dependency>
-		</xmp>
-		</pre>
+< dependency >
+	< groupId >org.seleniumhq.selenium< /groupId >
+	< artifactId >selenium-java< /artifactId >
+	< version >4.24.0< /version >
+< /dependency >
+			</pre>
 		</li>
 		<li>Выполнить загрузку библиотеки
 			<p align="center">
