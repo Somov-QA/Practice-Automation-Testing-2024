@@ -31,13 +31,6 @@
 	< version >4.24.0< /version >
 < /dependency >
 			</code></pre>
-			<textarea>
-<dependency>
-	<groupId>org.seleniumhq.selenium</groupId>
-	<artifactId>selenium-java</artifactId>
-	<version>4.24.0</version>
-</dependency>
-			</textarea>
 		</li>
 		<li>Выполнить загрузку библиотеки
 			<p align="center">
