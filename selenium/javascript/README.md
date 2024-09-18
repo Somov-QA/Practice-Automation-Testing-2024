@@ -9,7 +9,7 @@
 </p>
 
 <p>
-	<h4>Создание проекта:</h2>
+	<h4>Создание проекта и запуск автотеста:</h2>
 	<ul>
 		<li>Скачать и установить <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a></li>
 		<li>Открыть консоль и проверить работу NodeJS с помощью команты
