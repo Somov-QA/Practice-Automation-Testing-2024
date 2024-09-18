@@ -17,7 +17,14 @@
 npm version
 			</code></pre>
 		</li>
-		<li></li>
+		<li>Создать папку проекта и выполнить в консоли команду
+			<pre><code>
+npm install selenium-webdriver
+			</code></pre>
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/install_selenium_webdriver_javascript.jpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
 		<li></li>
