@@ -11,6 +11,7 @@
 <p>
 	<h4>Создание проекта и запуск автотеста:</h2>
 	<ul>
+		<li>Скачать и установить <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		<li>Скачать и установить <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a></li>
 		<li>Открыть консоль и проверить работу NodeJS с помощью команты
 			<pre><code>
