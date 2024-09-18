@@ -9,6 +9,8 @@
 	Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a><br>
 	Официальное описание <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a><br>
 	Официальная страница пакетов <a href="https://mvnrepository.com/">Maven</a><br>
+	Официальная страница <a href="https://junit.org/junit5/">junit5</a><br>
+	Официальная страница <a href="https://testng.org/">TestNG</a><br>
 </p>
 
 <p>
