@@ -21,15 +21,14 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/new_project_java.jpg">
 			</p>
 		</li>
-		<li>Подключить библиотеку Selenium к проекту
-			<pre><code>
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<li>Подключить библиотеку Selenium к проекту <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java">https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java</a>
+			<pre>
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.24.0</version>
 </dependency>
-			</code></pre>
+			</pre>
 		</li>
 		<li>Выполнить загрузку библиотеки
 			<p align="center">
