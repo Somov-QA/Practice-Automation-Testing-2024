@@ -5,8 +5,10 @@
 <p>
 	<h4>Ссылки на ресурсы:</h2>
 	Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a><br>
+	Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a><br>
+	Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a><br>
 	Официальное описание <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a><br>
-	Официальная страница пакетов <a href="https://nodejs.org/">Maven</a><br>
+	Официальная страница пакетов <a href="https://mvnrepository.com/">Maven</a><br>
 </p>
 
 <p>
@@ -19,11 +21,25 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/new_project_java.jpg">
 			</p>
 		</li>
-		<li>Текст
+		<li>Подключить библиотеку Selenium к проекту
 			<pre><code>
-Код
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.24.0</version>
+</dependency>
 			</code></pre>
 		</li>
+		<li>Выполнить загрузку библиотеки
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/load_maven_selenium_java.jpg">
+			</p>
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/pom_java.jpg">
+			</p>
+		</li>
+		<li>Текст</li>
 		<li>Текст</li>
 		<li>Текст</li>
 	</ul>
