@@ -7,9 +7,9 @@
 <p>
 	<h4>Содержание практики:</h2>
 	<ul>
-		<li>Selenium + Java</li>
-		<li>Selenuim + Python</li>
-		<li>Selenuim + JavaScript</li>
+		<li>автотесты Selenium (Java)</li>
+		<li>автотесты Selenuim (Python)</li>
+		<li>автотесты Selenuim (JavaScript)</li>
 	</ul>
 </p>
 <p>
@@ -35,8 +35,8 @@
 		</li>
 		<li>В папке C:\selenium\ создать файл <b>run-selenium.bat</b> в котором написать:
 			<pre><code>
-				cd C:\selenium
-				java -jar selenium-server-4.24.0.jar standalone
+cd C:\selenium
+java -jar selenium-server-4.24.0.jar standalone
 			</code></pre>
 			<p align="center">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/folder.jpg">
