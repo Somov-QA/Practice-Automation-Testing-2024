@@ -21,7 +21,7 @@
 		<li>Скачать и установить <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Community Edition</a></li>
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
 		<li>В редакторе IntelliJ IDEA создаем новый проект Maven с выбранным SDK: Oracle OpenJDK 11
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/new_project_java.jpg">
 			</p>
 		</li>
@@ -35,10 +35,10 @@
 			</code></pre>
 		</li>
 		<li>Выполнить загрузку библиотеки
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/load_maven_selenium_java.jpg">
 			</p>
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/pom_java.jpg">
 			</p>
 		</li>
@@ -64,17 +64,17 @@ if(Objects.equals(text, "Authorization was successful")){
 driver.close();
 driver.quit();
 			</code></pre>
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_main.jpg">
 			</p>
 		</li>
 		<li>Запустить автотест нажав кнопку Run в IntelliJ IDEA
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_run.jpg">
 			</p>
 		</li>
 		<li>Результат автотеста в консоли IntelliJ IDEA
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_console.jpg">
 			</p>
 		</li>
