@@ -4,13 +4,15 @@
 
 <p>
 	<h4>Ссылки на ресурсы:</h2>
-	Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a><br>
-	Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a><br>
-	Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a><br>
-	Официальное описание <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a><br>
-	Официальная страница пакетов <a href="https://mvnrepository.com/">Maven</a><br>
-	Официальная страница <a href="https://junit.org/junit5/">junit5</a><br>
-	Официальная страница <a href="https://testng.org/">TestNG</a><br>
+	<ul>
+		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
+		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a></li>
+		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a></li>
+		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a></li>
+		<li>Официальная страница <a href="https://mvnrepository.com/">Maven</a></li>
+		<li>Официальная страница <a href="https://junit.org/junit5/">junit5</a></li>
+		<li>Официальная страница <a href="https://testng.org/">TestNG</a></li>
+	</ul>
 </p>
 
 <p>
@@ -40,8 +42,41 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/pom_java.jpg">
 			</p>
 		</li>
-		<li>Текст</li>
-		<li>Текст</li>
-		<li>Текст</li>
+		<li>В файле Main.java описать автотест следующим образом
+			<pre><code>
+WebDriver driver = new ChromeDriver();
+driver.get("https://somovstudio.github.io/test_eng.html");
+driver.findElement(By.name("login")).sendKeys("admin");
+driver.findElement(By.name("pass")).sendKeys("0000");
+driver.findElement(By.id("buttonLogin")).click();
+
+WebElement element = driver.findElement(By.id("result"));
+Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+wait.until(d -> element.isDisplayed());
+
+String text = driver.findElement(By.id("textarea")).getAttribute("value");
+if(Objects.equals(text, "Authorization was successful")){
+	System.out.println("Test - SUCCESS");
+}else{
+	throw new Error("Test - FAILED");
+}
+
+driver.close();
+driver.quit();
+			</code></pre>
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_main.jpg">
+			</p>
+		</li>
+		<li>Запустить автотест нажав кнопку Run в IntelliJ IDEA
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_run.jpg">
+			</p>
+		</li>
+		<li>Результат автотеста в консоли IntelliJ IDEA
+			<p align="center">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_test_console.jpg">
+			</p>
+		</li>
 	</ul>
 </p>

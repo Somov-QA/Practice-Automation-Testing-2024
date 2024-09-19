@@ -14,11 +14,13 @@
 </p>
 <p>
 	<h4>Ссылки на ресурсы:</h2>
-	Официальный сайт Selenuim: <a href="https://www.selenium.dev/">https://www.selenium.dev/</a><br>
-	Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/">https://www.selenium.dev/downloads/</a><br>
-	Быстрый старт <a href="https://www.selenium.dev/documentation/grid/getting_started/">https://www.selenium.dev/documentation/grid/getting_started/</a><br>
-	Chrome драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable">https://googlechromelabs.github.io/chrome-for-testing/#stable</a><br>
-	Документация <a href="https://www.selenium.dev/documentation/overview/">https://www.selenium.dev/documentation/overview/</a><br>
+	<ul>
+		<li>Официальный сайт Selenuim: <a href="https://www.selenium.dev/">https://www.selenium.dev/</a></li>
+		<li>Документация <a href="https://www.selenium.dev/documentation/overview/">https://www.selenium.dev/documentation/overview/</a></li>
+		<li>Быстрый старт <a href="https://www.selenium.dev/documentation/grid/getting_started/">https://www.selenium.dev/documentation/grid/getting_started/</a></li>
+		<li>Скачать Selenium Server (Grid): <a href="https://www.selenium.dev/downloads/">https://www.selenium.dev/downloads/</a></li>
+		<li>Chrome драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable">https://googlechromelabs.github.io/chrome-for-testing/#stable</a></li>
+	</ul>
 </p>
 <p>
 	<h4>Начало работы с Selenium Grid:</h2>

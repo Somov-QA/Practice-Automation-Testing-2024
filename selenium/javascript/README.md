@@ -4,8 +4,11 @@
 
 <p>
 	<h4>Ссылки на ресурсы:</h2>
-	Официальное описание <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">Selenium WebDriver JavaScript API</a><br>
-	Страница приложения <a href="https://nodejs.org/">NodeJS</a><br>
+	<ul>
+		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
+		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">API Docs</a></li>
+		<li>Официальная страница <a href="https://nodejs.org/">NodeJS</a></li>
+	</ul>
 </p>
 
 <p>
@@ -26,7 +29,7 @@ npm install selenium-webdriver
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/install_selenium_webdriver_javascript.jpg">
 			</p>
 		</li>
-		<li>Открыть проект в редакторе Visual Studio Code</li>
+		<li>Открыть папку в редакторе Visual Studio Code</li>
 		<li>Создать файл test1.js и описать автотест следующим образом
 			<pre><code>
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
