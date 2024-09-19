@@ -25,7 +25,7 @@ npm version
 			<pre><code>
 npm install selenium-webdriver
 			</code></pre>
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/install_selenium_webdriver_javascript.jpg">
 			</p>
 		</li>
@@ -59,10 +59,10 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 			<pre><code>
 node test1.js
 			</code></pre>
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/test1.jpg">
 			</p>
-			<p align="center">
+			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/console_test1.jpg">
 			</p>
 		</li>
