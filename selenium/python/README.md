@@ -22,15 +22,17 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_path.jpg">
 			</p>
 		</li>
-		<li>Проверить версию Python командой:
+		<li>Скачать и установить <a href="https://www.jetbrains.com/pycharm/download/other.html">PyCharm Community Edition</a></li>
+		<li>Проверить версию Python, посмотреть установленные библиотеки, обновить pip
 			<pre><code>
 python -V
+pip list
+python -m pip install --upgrade pip
 			</code></pre>
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_version_console.jpg">
 			</p>
 		</li>
-		<li>Скачать и установить <a href="https://www.jetbrains.com/pycharm/download/other.html">PyCharm Community Edition</a></li>
 		<li>
 			<pre><code>
 
