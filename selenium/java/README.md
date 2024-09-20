@@ -9,6 +9,7 @@
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a></li>
 		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a></li>
+		<li>Официальная страница <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Community Edition</a></li>
 		<li>Официальная страница <a href="https://mvnrepository.com/">Maven</a></li>
 		<li>Официальная страница <a href="https://junit.org/junit5/">junit5</a></li>
 		<li>Официальная страница <a href="https://testng.org/">TestNG</a></li>
@@ -22,7 +23,7 @@
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
 		<li>В редакторе IntelliJ IDEA создаем новый проект Maven с выбранным SDK: Oracle OpenJDK 11
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/new_project_java.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_new_project.jpg">
 			</p>
 		</li>
 		<li>Подключить библиотеку Selenium к проекту <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java">https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java</a>
@@ -36,10 +37,10 @@
 		</li>
 		<li>Выполнить загрузку библиотеки
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/load_maven_selenium_java.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_load_maven_selenium.jpg">
 			</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/pom_java.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/java_pom.jpg">
 			</p>
 		</li>
 		<li>В файле Main.java описать автотест следующим образом

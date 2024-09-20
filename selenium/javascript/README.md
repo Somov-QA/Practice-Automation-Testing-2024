@@ -7,6 +7,7 @@
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
 		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">API Docs</a></li>
+		<li>Официальная страница <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		<li>Официальная страница <a href="https://nodejs.org/">NodeJS</a></li>
 	</ul>
 </p>
@@ -26,7 +27,7 @@ npm version
 npm install selenium-webdriver
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/install_selenium_webdriver_javascript.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_install_selenium_webdriver.jpg">
 			</p>
 		</li>
 		<li>Открыть папку в редакторе Visual Studio Code</li>
@@ -60,10 +61,10 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 node test1.js
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/test1.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_test1.jpg">
 			</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/console_test1.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_console_test1.jpg">
 			</p>
 		</li>
 	</ul>
