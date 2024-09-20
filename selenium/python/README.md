@@ -33,12 +33,22 @@ python -m pip install --upgrade pip
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_version_console.jpg">
 			</p>
 		</li>
-		<li>
+		<li>Установить Selenium командой
 			<pre><code>
-
+pip install -U selenium
 			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_install.jpg">
+			</p>
 		</li>
-		<li></li>
+		<li>Проверить установленную версию Selenium
+			<pre><code>
+pip list
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_pip_list_selenium.jpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
 		<li></li>
