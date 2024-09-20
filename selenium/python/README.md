@@ -58,6 +58,14 @@ pip list
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings.jpg">
 			</p>
+			<br> Добавить пакет Selenium
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings_add_pack.jpg">
+			</p>
+			<br> При установке будут добавлены следующие пакеты
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings_selenium.jpg">
+			</p>
 		</li>
 		<li></li>
 		<li></li>
