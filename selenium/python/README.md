@@ -55,9 +55,6 @@ pip list
 			</p>
 		</li>
 		<li>Настройки проекта
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings.jpg">
-			</p>
 			<br> Добавить пакет Selenium
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings_add_pack.jpg">
@@ -67,8 +64,35 @@ pip list
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings_selenium.jpg">
 			</p>
 		</li>
+		<li>Создать пакет tests и в нём файл unit test с именем test1
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_create_test.jpg">
+			</p>
+		</li>
+		<li>В файле test1.py описать автотест следующим образом
+			<pre><code>
+driver = webdriver.Chrome()
+driver.get('https://somovstudio.github.io/test_eng.html')
+driver.find_element(By.NAME, 'login').send_keys('admin')
+driver.find_element(By.NAME, 'pass').send_keys('0000')
+driver.find_element(By.ID, 'buttonLogin').click()
+element = driver.find_element(By.ID, 'result')
+wait = WebDriverWait(driver, timeout=5)
+wait.until(lambda d: element.is_displayed())
+text = driver.find_element(By.ID, 'textarea').get_attribute('value')
+print("TEXT: " + text)
+self.assertEqual(text, 'Authorization was successful')
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_test1.jpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
-		<li></li>
+		<li>Запуск автотеста из консоли
+			<pre><code>
+python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\Autotesting\tests\test1.py
+			</code></pre>
+		</li>
 	</ul>
 </p>
