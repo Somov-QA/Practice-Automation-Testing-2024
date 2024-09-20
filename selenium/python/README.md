@@ -16,19 +16,25 @@
 	<h4>Создание проекта и запуск автотеста:</h2>
 	<ul>
 		<li>Скачать и установить <a href="https://www.python.org/">Python</a></li>
+		<li>В переменной Path прописать путь к папке C:\Program Files\Python
+			<br>(Панель управления > Система > Доплнительные параметры системы > Переменные среды)
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_path.jpg">
+			</p>
+		</li>
+		<li>Проверить версию Python командой:
+			<pre><code>
+python -V
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_version_console.jpg">
+			</p>
+		</li>
 		<li>Скачать и установить <a href="https://www.jetbrains.com/pycharm/download/other.html">PyCharm Community Edition</a></li>
 		<li>
 			<pre><code>
 
 			</code></pre>
-		</li>
-		<li>
-			<pre><code>
-
-			</code></pre>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/000.jpg">
-			</p>
 		</li>
 		<li></li>
 		<li></li>

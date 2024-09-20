@@ -31,6 +31,7 @@
 		<li>Скачать jar файл <a href="https://www.selenium.dev/downloads/">Selenium Server</a> или с <a href="https://github.com/SeleniumHQ/selenium/releases/tag/selenium-4.24.0">github</a></li>
 		<li>Создать папку C:\selenium\ в которую скопировать файлы: <b>selenium-server-4.24.0.jar</b>, <b>chromedriver.exe</b></li>
 		<li>В переменной Path прописать путь к папке C:\selenium
+			<br>(Панель управления > Система > Доплнительные параметры системы > Переменные среды)
 			<p align="center">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/path.jpg">
 			</p>
