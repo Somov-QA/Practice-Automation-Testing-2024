@@ -49,6 +49,11 @@ pip list
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_pip_list_selenium.jpg">
 			</p>
 		</li>
+		<li>В редакторе PyCharm создаем новый проект
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_new_projectjpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
 		<li></li>
