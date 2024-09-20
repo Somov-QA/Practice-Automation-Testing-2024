@@ -87,12 +87,21 @@ self.assertEqual(text, 'Authorization was successful')
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_test1.jpg">
 			</p>
 		</li>
-		<li></li>
-		<li></li>
+		<li>Запуск автотеста в редакторе PyCharm
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_test1_run.jpg">
+			</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_test1_result.jpg">
+			</p>
+		</li>
 		<li>Запуск автотеста из консоли
 			<pre><code>
 python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\Autotesting\tests\test1.py
 			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_console_run.jpg">
+			</p>
 		</li>
 	</ul>
 </p>
