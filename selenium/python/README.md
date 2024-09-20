@@ -51,10 +51,14 @@ pip list
 		</li>
 		<li>В редакторе PyCharm создаем новый проект
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_new_projectjpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_new_project.jpg">
 			</p>
 		</li>
-		<li></li>
+		<li>Настройки проекта
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/python_project_settings.jpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
 		<li></li>
