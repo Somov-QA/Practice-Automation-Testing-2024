@@ -23,7 +23,7 @@
 	</ul>
 </p>
 <p>
-	<h4>Начало работы с Selenium Grid:</h2>
+	<h4>Установка и запуск Selenium Grid:</h2>
 	<ul>
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
 		<li>Скачать и установить браузер <a href="https://www.google.com/intl/ru/chrome/browser-tools/">Chrome</a></li>
