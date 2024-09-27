@@ -31,7 +31,7 @@ npm install selenium-webdriver
 			</p>
 		</li>
 		<li>Открыть папку в редакторе Visual Studio Code</li>
-		<li>Создать файл test1.js и описать автотест следующим образом
+		<li>Создать файл demo-test.js и описать автотест следующим образом
 			<pre><code>
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 
@@ -58,7 +58,7 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 		</li>
 		<li>Запустить автотест командой
 			<pre><code>
-node test1.js
+node demo-test.js
 			</code></pre>
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_test1.jpg">
