@@ -3,6 +3,16 @@
 Автоматизированное тестирование Selenium на языке Java
 
 <p>
+	<h4>Содержание:</h2>
+	<ul>
+		<li>example-simple</li>
+		<li>example-junit</li>
+		<li>example-testng</li>
+		<li>example-demo</li>
+	</ul>
+</p>
+
+<p>
 	<h4>Полезные ссылки:</h2>
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
@@ -21,12 +31,13 @@
 	<ol>
 		<li>Скачать и установить <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Community Edition</a></li>
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
-		<li>В редакторе IntelliJ IDEA создаем новый проект example-simple по системе Maven с выбранным SDK: Oracle OpenJDK 11
+		<li>В редакторе IntelliJ IDEA создаем новый проект example-simple выбрав Maven и SDK: Oracle OpenJDK 11
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_new_project.jpg">
 			</p>
 		</li>
-		<li>Подключить библиотеку Selenium к проекту <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java">https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java</a>
+		<li>Подключить библиотеку Selenium к проекту в файле pom.xml
+		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java">https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java</a>
 			<pre><code>
 < dependency >
 	< groupId >org.seleniumhq.selenium< /groupId >
@@ -35,7 +46,7 @@
 < /dependency >
 			</code></pre>
 		</li>
-		<li>Выполнить загрузку библиотеки
+		<li>Выполнить загрузку библиотеки в файле pom.xml
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_load_maven_selenium.jpg">
 			</p>
