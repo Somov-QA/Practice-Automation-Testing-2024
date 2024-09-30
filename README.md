@@ -7,13 +7,14 @@
 <p>
 	<h4>Содержание практики:</h2>
 	<ul>
-		<li>автотесты Selenium (Java)</li>
-		<li>автотесты Selenuim (Python)</li>
-		<li>автотесты Selenuim (JavaScript)</li>
+		<li>selenium - автоматизированное тестирвоание веб сайта</li>
+		<li>frameworks - применение фреймворков автоматизированного тестирования</li>
+		<li>raports - инструменты для формирования отчетов повле выполнения автотестов</li>
+		<li>jmeter - нагрузочное тестирование</li>
 	</ul>
 </p>
 <p>
-	<h4>Ссылки на ресурсы:</h2>
+	<h4>Полезные ссылки:</h2>
 	<ul>
 		<li>Официальный сайт Selenuim: <a href="https://www.selenium.dev/">https://www.selenium.dev/</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/overview/">https://www.selenium.dev/documentation/overview/</a></li>
@@ -24,7 +25,7 @@
 </p>
 <p>
 	<h4>Установка и запуск Selenium Grid:</h2>
-	<ul>
+	<ol>
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
 		<li>Скачать и установить браузер <a href="https://www.google.com/intl/ru/chrome/browser-tools/">Chrome</a></li>
 		<li>Скачать драйвер <a href="https://googlechromelabs.github.io/chrome-for-testing/#stable">ChromeDriver</a></li>
@@ -33,7 +34,7 @@
 		<li>В переменной Path прописать путь к папке C:\selenium
 			<br>(Панель управления > Система > Доплнительные параметры системы > Переменные среды)
 			<p align="center">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/path.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/path.jpg">
 			</p>
 		</li>
 		<li>В папке C:\selenium\ создать файл <b>run-selenium.bat</b> в котором написать:
@@ -42,14 +43,14 @@ cd C:\selenium
 java -jar selenium-server-4.24.0.jar standalone
 			</code></pre>
 			<p align="center">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/folder.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/folder.jpg">
 			</p>
 		</li>
 		<li>Запустить файл run-selenium.bat
 			<p align="center">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/console.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/console.jpg">
 			</p>
 		</li>
 		<li>Чтобы остановить Selenium нажмите в консоли Ctrl+C и затем Y</li>
-	</ul>
+	</ol>
 </p>
