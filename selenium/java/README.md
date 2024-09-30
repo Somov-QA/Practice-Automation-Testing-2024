@@ -40,7 +40,7 @@
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_load_maven_selenium.jpg">
 			</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/_java_pom.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom.jpg">
 			</p>
 		</li>
 		<li>В файле Main.java описать автотест следующим образом
