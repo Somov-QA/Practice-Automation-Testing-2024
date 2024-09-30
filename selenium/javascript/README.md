@@ -3,7 +3,15 @@
 Автоматизированное тестирование Selenium на языке JavaScript
 
 <p>
-	<h4>Ссылки на ресурсы:</h2>
+	<h4>Содержание:</h2>
+	<ul>
+		<li>example-simple</li>
+		<li>example-demo</li>
+	</ul>
+</p>
+
+<p>
+	<h4>Полезные ссылки:</h2>
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
 		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">API Docs</a></li>
@@ -14,24 +22,24 @@
 
 <p>
 	<h4>Создание проекта и запуск автотеста:</h2>
-	<ul>
+	<ol>
 		<li>Скачать и установить <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		<li>Скачать и установить <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a></li>
 		<li>Открыть консоль и проверить работу NodeJS с помощью команты
 			<pre><code>
-npm version
+npm -v
 			</code></pre>
 		</li>
-		<li>Создать папку проекта и выполнить в консоли команду
+		<li>Создать папку проекта example-simple и в корне этой папки выполнить в консоли команду:
 			<pre><code>
 npm install selenium-webdriver
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_install_selenium_webdriver.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_install_selenium_webdriver.jpg">
 			</p>
 		</li>
 		<li>Открыть папку в редакторе Visual Studio Code</li>
-		<li>Создать файл demo-test.js и описать автотест следующим образом
+		<li>Создать файл test.js и описать автотест следующим образом
 			<pre><code>
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 
@@ -58,14 +66,14 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 		</li>
 		<li>Запустить автотест командой
 			<pre><code>
-node demo-test.js
+node test.js
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_test1.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_example_simple_test.jpg">
 			</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_console_test1.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_console_example_simple_test.jpg">
 			</p>
 		</li>
-	</ul>
+	</ol>
 </p>
