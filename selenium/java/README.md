@@ -3,7 +3,7 @@
 Автоматизированное тестирование Selenium на языке Java
 
 <p>
-	<h4>Ссылки на ресурсы:</h2>
+	<h4>Полезные ссылки:</h2>
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a></li>

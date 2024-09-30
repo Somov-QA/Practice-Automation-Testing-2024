@@ -68,6 +68,8 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 			<pre><code>
 node test.js
 			</code></pre>
+		</li>
+		<li>Результат автотеста в консоли
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_example_simple_test.jpg">
 			</p>
