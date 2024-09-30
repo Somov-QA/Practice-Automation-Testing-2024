@@ -69,10 +69,10 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 node test.js
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_example_simple_test.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_example_simple_test.jpg">
 			</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/images/javascript_console_example_simple_test.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_console_example_simple_test.jpg">
 			</p>
 		</li>
 	</ol>
