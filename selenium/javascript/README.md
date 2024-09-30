@@ -21,7 +21,7 @@
 </p>
 
 <p>
-	<h4>Создание проекта и запуск автотеста:</h2>
+	<h4>Создание проекта и запуск простого автотеста:</h2>
 	<ol>
 		<li>Скачать и установить <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		<li>Скачать и установить <a href="https://nodejs.org/en/download/prebuilt-installer">NodeJS</a></li>

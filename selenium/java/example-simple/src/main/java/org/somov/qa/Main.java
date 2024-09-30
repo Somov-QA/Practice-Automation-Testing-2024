@@ -1,4 +1,4 @@
-package org.autotesting;
+package org.somov.qa;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
