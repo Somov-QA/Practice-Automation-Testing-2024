@@ -24,7 +24,7 @@
 
 <p>
 	<h4>Создание проекта и запуск автотеста:</h2>
-	<ul>
+	<ol>
 		<li>Скачать и установить <a href="https://www.python.org/">Python</a></li>
 		<li>В переменной Path прописать путь к папке C:\Program Files\Python
 			<br>(Панель управления > Система > Доплнительные параметры системы > Переменные среды)
@@ -113,5 +113,5 @@ python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\Autotesti
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_console_run.jpg">
 			</p>
 		</li>
-	</ul>
+	</ol>
 </p>
