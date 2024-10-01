@@ -23,7 +23,7 @@
 </p>
 
 <p>
-	<h4>Создание проекта и запуск автотеста:</h2>
+	<h4>Создание проекта и запуск простого автотеста:</h2>
 	<ol>
 		<li>Скачать и установить <a href="https://www.python.org/">Python</a></li>
 		<li>В переменной Path прописать путь к папке C:\Program Files\Python
@@ -74,12 +74,7 @@ pip list
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_project_settings_selenium.jpg">
 			</p>
 		</li>
-		<li>Создать пакет tests и в нём файл unit test с именем test1
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_create_test.jpg">
-			</p>
-		</li>
-		<li>В файле test1.py описать автотест следующим образом
+		<li>В файле main.py описать автотест следующим образом
 			<pre><code>
 driver = webdriver.Chrome()
 driver.get('https://somovstudio.github.io/test_eng.html')
@@ -90,19 +85,21 @@ element = driver.find_element(By.ID, 'result')
 wait = WebDriverWait(driver, timeout=5)
 wait.until(lambda d: element.is_displayed())
 text = driver.find_element(By.ID, 'textarea').get_attribute('value')
-print("TEXT: " + text)
-self.assertEqual(text, 'Authorization was successful')
+if text == 'Authorization was successful':
+    print("Test - SUCCESS")
+else:
+    print("Test - FAILED")
+    raise Exception('Test - FAILED')
+driver.close()
+driver.quit()
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_test1.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_main.jpg">
 			</p>
 		</li>
 		<li>Запуск автотеста в редакторе PyCharm
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_test1_run.jpg">
-			</p>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_test1_result.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_main_run.jpg">
 			</p>
 		</li>
 		<li>Запуск автотеста из консоли
@@ -110,7 +107,7 @@ self.assertEqual(text, 'Authorization was successful')
 python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\Autotesting\tests\test1.py
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_console_run.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_main_console_run.jpg">
 			</p>
 		</li>
 	</ol>
