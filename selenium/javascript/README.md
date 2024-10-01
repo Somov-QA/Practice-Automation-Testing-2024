@@ -6,7 +6,7 @@
 	<h4>Содержание:</h2>
 	<ul>
 		<li>example-simple</li>
-		<li>example-demo</li>
+		<li>demo</li>
 	</ul>
 </p>
 
@@ -14,7 +14,7 @@
 	<h4>Полезные ссылки:</h2>
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
-		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">API Docs</a></li>
+		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/javascript/index.html">API Docs (javascript)</a></li>
 		<li>Официальная страница <a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
 		<li>Официальная страница <a href="https://nodejs.org/">NodeJS</a></li>
 	</ul>

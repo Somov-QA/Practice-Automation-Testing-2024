@@ -8,7 +8,7 @@
 		<li>example-simple</li>
 		<li>example-junit</li>
 		<li>example-testng</li>
-		<li>example-demo</li>
+		<li>demo</li>
 	</ul>
 </p>
 
@@ -18,7 +18,7 @@
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/install_library/">Install a Selenium library</a></li>
-		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs</a></li>
+		<li>Документация <a href="https://www.selenium.dev/selenium/docs/api/java/index.html">API Docs (java)</a></li>
 		<li>Официальная страница <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Community Edition</a></li>
 		<li>Официальная страница <a href="https://mvnrepository.com/">Maven</a></li>
 		<li>Официальная страница <a href="https://junit.org/junit5/">junit5</a></li>
