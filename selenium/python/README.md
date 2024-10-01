@@ -104,7 +104,7 @@ driver.quit()
 		</li>
 		<li>Запуск автотеста из консоли
 			<pre><code>
-python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\Autotesting\tests\test1.py
+python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\examplesimple\main.py
 			</code></pre>
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_main_console_run.jpg">
