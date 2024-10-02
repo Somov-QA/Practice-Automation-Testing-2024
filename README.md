@@ -9,10 +9,10 @@
 	<ul>
 		<li>selenium - автоматизированное тестирование веб сайта</li>
 		<li>frameworks - фреймворки автоматизированного тестирования</li>
-		<li>raports - создание отчетов после выполнения автотестов</li>
-		<li>jmeter - нагрузочное тестирование</li>
-		<li>bruno - тестирование API</li>
-		<li>docker, jenkins - запуск автотестов</li>
+		<li>raports - создание отчетов с помощью Allure Report, Report Portal</li>
+		<li>runner - запуск автотестов Docker, Jenkins</li>
+		<li>jmeter - нагрузочное тестирование с помощью Jmeter</li>
+		<li>api - тестирование API с помощью Bruno</li>
 	</ul>
 </p>
 <p>
