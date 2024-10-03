@@ -1,0 +1,60 @@
+html { margin: 0; padding: 0; border: 0;}
+body {
+	background-color: #F9F7FF;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 9pt;
+}
+#auth {
+	border: 1px solid #F1EDFF; 
+	border-radius: 10px; 
+	padding: 15px; 
+	position: relative; 
+	min-width: 250px;
+	max-width: 250px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	text-align: center;
+	background-color: #F1EDFF;
+	box-shadow: 0 0 10px rgba(90,147,224,0.8);
+	color: #004A7F;
+}
+#buttonLogin{
+	min-width: 100px;
+	max-width: 100px; 
+	min-height: 30px;
+	max-height: 30px;
+	background-color: #5A93E0;
+	color: white;
+	border: 0;
+}
+#buttonLogin:hover{
+	background-color: #94B4DD;
+	color: white;
+	cursor: pointer;
+}
+.text-field {
+	min-width: 180px;
+	max-width: 180px; 
+	min-height: 20px;
+	max-height: 20px;
+	border: 1px solid #5784B2; 
+}
+#result {
+	position: relative; 
+	top: -150px;
+	min-width: 350px;
+	max-width: 350px; 
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: 1px solid black; 
+	background-color: white;
+	/*opacity: 0;*/
+	visibility: hidden;
+}
+#textarea {
+	min-width: 345px;
+	max-width: 345px; 
+	border: 0;
+}

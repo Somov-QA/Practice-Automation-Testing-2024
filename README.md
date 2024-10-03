@@ -12,7 +12,7 @@
 		<li>raports - создание отчетов с помощью Allure Report, Report Portal</li>
 		<li>runner - запуск автотестов Docker, Jenkins</li>
 		<li>jmeter - нагрузочное тестирование с помощью Jmeter</li>
-		<li>api - тестирование API с помощью Bruno</li>
+		<li>bruno - тестирование API с помощью Bruno</li>
 	</ul>
 </p>
 <p>
