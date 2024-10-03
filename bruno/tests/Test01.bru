@@ -1,0 +1,32 @@
+meta {
+  name: Test01
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost/api/auth.php?name=admin&pass=0000
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  name: admin
+  pass: 0000
+}
+
+headers {
+  Content-type: application/json; charset=UTF-8
+}
+
+assert {
+  res.status: eq 200
+  res.body.message: eq Авторизация прошла успешно
+}
+
+tests {
+  test("Проверить ответ сервера", function() {
+    const data = res.getBody();
+    expect(res.getStatus()).to.equal(200);
+  });
+}

@@ -1,0 +1,39 @@
+meta {
+  name: Test02
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost/api/auth.php
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  post_name: admin
+  post_pass: 0000
+}
+
+script:pre-request {
+  const res = {
+    body: '{"post_name": "admin", "post_pass": 0000}',
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'no-cache',
+    },
+    status: 200,
+  };
+   
+  // Accessing response properties
+  console.log(res.body); // Output: '{"message": "Hello, world!"}'
+  console.log(res.headers['Content-Type']); // Output: 'application/json'
+  console.log(res.status); // Output: 200
+}
+
+tests {
+  test("Проверить ответ сервера", function() {
+    const data = res.getBody();
+    expect(res.getStatus()).to.equal(200);
+  });
+}
