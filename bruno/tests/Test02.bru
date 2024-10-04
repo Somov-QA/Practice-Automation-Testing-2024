@@ -17,6 +17,12 @@ script:pre-request {
   });
 }
 
+script:post-response {
+  console.log("headers: " + req.headers);
+  console.log("method: " + req.method);
+  console.log("url: " + req.url);
+}
+
 tests {
   test("Проверить ответ сервера", function() {
     expect(res.getStatus()).to.equal(200);
