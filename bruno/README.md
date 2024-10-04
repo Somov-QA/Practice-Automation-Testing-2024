@@ -53,12 +53,60 @@ else
 	print('{"status":"ERROR","message":"Нет данных для авторизации"}');
 }
 			</code></pre>
+			<br>таким образом API будет по адресу http://localhost/api/auth.php?name=admin&pass=0000
 		</li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>Скачать и установить <a href="https://docs.usebruno.com/">Bruno</a></li>
+		<li>Запустить Bruno и создать коллекцию tests
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_create_collection.jpg">
+			</p>
+		</li>
+		<li>В коллекции tests создать запрос Test01
+		<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_new_request.jpg">
+			</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_new_request_data.jpg">
+			</p>
+			<p>Выбрать однин из режимов (safe - ограниченный, Developer - полный)</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_new_request_mode.jpg">
+			</p>
+		</li>
+		<li>В новом запросе указать параметры
+			<pre><code>
+name: admin
+pass: 0000
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_params.jpg">
+			</p>
+			<p>и заголовок</p>
+			<pre><code>
+Content-type: application/json; charset=UTF-8
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_headers.jpg">
+			</p>
+			<p>нажать кнопку сохранить</p>
+		</li>
+		<li>Выполните запрос
+			<p>В результате сервер должен ответит:</p>
+			<pre><code>
+{"status":"PASSED","message":"Авторизация прошла успешно"}0
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_get_run.jpg">
+			</p>
+			<p>Для того чтобы выполнить POST запрос параметры нужно передавать через Body</p>
+			<pre><code>
+post_name: admin
+post_pass: 0000
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_post_run.jpg">
+			</p>
+		</li>
 		<li></li>
 		<li></li>
 		<li></li>
