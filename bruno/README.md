@@ -28,7 +28,6 @@
 		<li>Скачать и установить <a href="https://www.wampserver.com/">Wampserver</a> (сервер Apache, PHP, MySQL)</li>
 		<li>Создать на сервере тестовое API в папке \wamp64\www\api  файл: auth.php
 			<pre><code>
-<?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 date_default_timezone_set("Europe/Moscow");
@@ -53,7 +52,6 @@ else
 {
 	print('{"status":"ERROR","message":"Нет данных для авторизации"}');
 }
-?>
 			</code></pre>
 		</li>
 		<li></li>
