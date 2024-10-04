@@ -107,10 +107,78 @@ post_pass: 0000
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_post_run.jpg">
 			</p>
 		</li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>Простая проверка в которой определяется ответ сервера, если 200 значит успешно
+			<pre><code>
+test("Проверить ответ сервера", function() {
+  const data = res.getBody();
+  expect(res.getStatus()).to.equal(200);
+});
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_test.jpg">
+			</p>
+			<p>Эту проверку можно выполнить без скрипта на вкладке Assert</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_assert.jpg">
+			</p>
+		</li>
+		<li>Выполним проверку сообщения возвращаемого сервером
+			<p>Создадим POST запрос и на вкладке Script пропишем отправляемые данные</p>
+			<pre><code>
+req.setBody({
+  "post_name": "admin",
+  "post_pass": "0000"
+});
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_script.jpg">
+			</p>
+			<p>на вкладке Tests добавим проверку сообщения полученного от сервера</p>
+			<pre><code>
+test("Проверить сообщения частично", function() {
+  const data = res.getBody();
+  expect(data.message).to.contains('успешно');
+});
+
+test("Проверить сообщения полностью", function() {
+  const data = res.getBody();
+  expect(data.message).to.equal('Авторизация прошла успешно');
+});
+
+test("Проверить тип сообщения строка", function() {
+  const data = res.getBody();
+  expect(data.message).to.be.a('string');
+});
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_tests.jpg">
+			</p>		
+		</li>
+		<li>Выполним запрос
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_results.jpg">
+			</p>
+			<p>В результате будет проверено сообщение частично и полностью, а так же проверен тим поля.</p>
+		</li>
+		<li>Запуск тестов из командной строки
+			<p>
+				Скачайте и установите <a href="https://nodejs.org/">NodeJS</a>
+				<br>Откройте консоль и выполните установку 
+			</p>
+			<pre><code>
+npm install -g @usebruno/cli
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_install_userbruno_cli.jpg">
+			</p>
+			<p>Перейдите в каталог, где находится коллекция запросов и выполните следующую команду:</p>
+			<pre><code>
+bru run test02.bru
+			</code></pre>
+			<p>результат выполнения будет отражен в консоли</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_cli_run.jpg">
+			</p>
+		</li>
 	</ol>
 </p>
