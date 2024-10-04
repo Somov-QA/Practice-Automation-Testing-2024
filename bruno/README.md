@@ -93,7 +93,7 @@ Content-type: application/json; charset=UTF-8
 		<li>Выполните запрос
 			<p>В результате сервер должен ответит:</p>
 			<pre><code>
-{"status":"PASSED","message":"Авторизация прошла успешно"}0
+{"status":"PASSED","message":"Авторизация прошла успешно"}
 			</code></pre>
 			<p align="left">
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/bruno_request_get_run.jpg">
