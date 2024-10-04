@@ -68,9 +68,9 @@ wait.until(d -> element.isDisplayed());
 
 String text = driver.findElement(By.id("textarea")).getAttribute("value");
 if(Objects.equals(text, "Authorization was successful")){
-	System.out.println("Test - SUCCESS");
+		System.out.println("Test - SUCCESS");
 }else{
-	throw new Error("Test - FAILED");
+		throw new Error("Test - FAILED");
 }
 
 driver.close();

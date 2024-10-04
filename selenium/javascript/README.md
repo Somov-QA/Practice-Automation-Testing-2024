@@ -41,8 +41,6 @@ npm install selenium-webdriver
 		<li>Открыть папку в редакторе Visual Studio Code</li>
 		<li>Создать файл test.js и описать автотест следующим образом
 			<pre><code>
-const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
-
 (async function example() {
     let driver = await new Builder().forBrowser(Browser.CHROME).build();
     try {
