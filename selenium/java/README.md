@@ -27,7 +27,7 @@
 </p>
 
 <p>
-	<h4>Создание проекта и запуск простого автотеста:</h2>
+	<h4>Создание проекта и запуск простого автотеста:</h4>
 	<ol>
 		<li>Скачать и установить <a href="https://www.jetbrains.com/idea/download/other.html">IntelliJ IDEA Community Edition</a></li>
 		<li>Скачать и установить <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Java SE Development Kit 11</a></li>
