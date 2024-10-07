@@ -22,7 +22,7 @@
 		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/jmeter">jmeter</a> - нагрузочное тестирование с помощью Jmeter</li>
 		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/bruno">bruno</a> - тестирование API с помощью Bruno</li>
 	</ul>
-	<small>*для перехода к подробному описанию нажмите на ссылки</small>
+	<small><i>*для перехода к подробному описанию нажмите на ссылки</i></small>
 </p>
 <p>
 	<h4>Полезные ссылки:</h2>
