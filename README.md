@@ -4,16 +4,25 @@
 
 Практика автоматизированного тестирования 2024
 
+
+<p>
+	<h4>Документация:</h2>
+	<ul>
+		<li>Подное описание практики в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_docs">документе</a></li>
+		<li>Тест-кейсы для автотестов описаны в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_test-cases">документе</a></li>
+	</ul>
+</p>
 <p>
 	<h4>Содержание практики:</h2>
 	<ul>
-		<li>selenium - автоматизированное тестирование веб сайта</li>
-		<li>frameworks - фреймворки автоматизированного тестирования</li>
-		<li>raports - создание отчетов с помощью Allure Report, Report Portal</li>
-		<li>runner - запуск автотестов Docker, Jenkins</li>
-		<li>jmeter - нагрузочное тестирование с помощью Jmeter</li>
-		<li>bruno - тестирование API с помощью Bruno</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/selenium">selenium</a> - автоматизированное тестирование веб сайта</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/frameworks">frameworks</a> - фреймворки автоматизированного тестирования</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/raports">raports</a> - создание отчетов с помощью Allure Report, Report Portal</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/runner">runner</a> - запуск автотестов Docker, Jenkins</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/jmeter">jmeter</a> - нагрузочное тестирование с помощью Jmeter</li>
+		<li><a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/bruno">bruno</a> - тестирование API с помощью Bruno</li>
 	</ul>
+	<small>*для перехода к подробному описанию нажмите на ссылки</small>
 </p>
 <p>
 	<h4>Полезные ссылки:</h2>
