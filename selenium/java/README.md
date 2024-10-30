@@ -92,3 +92,36 @@ driver.quit();
 		</li>
 	</ol>
 </p>
+<hr>
+<p>
+	<h4>Практика применения JUnit</h4>
+	<ol>
+		<li>Подключить библиотеку JUnit Jupiter API к проекту в файле pom.xml
+		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api">https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api</a>
+			<pre><code>
+< dependency >
+	< groupId >org.junit.jupiter< /groupId >
+	< artifactId >junit-jupiter-api< /artifactId >
+	< version >5.11.3< /version >
+	< scope >test< /scope >
+< /dependency >
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_junit.jpg">
+			</p>
+		</li>
+		<li>В папке test создать пакет tests
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_package.jpg">
+			</p>
+		</li>
+		<li>В пакете tests создать класс автотеста TestAuthorization.java
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_test.jpg">
+			</p>
+		</li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ol>
+</p>
