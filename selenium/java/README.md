@@ -224,7 +224,7 @@ public class TestAuthorization {
 }
 			</code></pre>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_junit.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit.jpg">
 			</p>
 		</li>
 		<li></li>
