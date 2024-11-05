@@ -227,7 +227,7 @@ public class TestAuthorization {
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit.jpg">
 			</p>
 		</li>
-		<li></li>
+		<li>Запуск автотеста из под командной строки</li>
 		<li></li>
 		<li></li>
 	</ol>
@@ -235,3 +235,4 @@ public class TestAuthorization {
 
 https://habr.com/ru/articles/590607/
 https://junit.org/junit5/docs/current/user-guide/
+https://www.baeldung.com/junit-run-from-command-line
