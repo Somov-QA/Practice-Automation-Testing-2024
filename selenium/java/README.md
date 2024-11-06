@@ -228,7 +228,18 @@ public class TestAuthorization {
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit.jpg">
 			</p>
 		</li>
-		<li>Запуск автотеста из под командной строки</li>
+		<li>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
+			</p>
+		</li>
+		<li>Запустить автотест из командной строки с помощью Maven
+			<br>Команда
+			<pre><code>
+mvn clean test -Dtest=TestAuthorization
+			</code></pre>
+		</li>
+		<li></li>
 		<li></li>
 		<li></li>
 	</ol>
