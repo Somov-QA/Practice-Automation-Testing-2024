@@ -100,12 +100,6 @@ driver.quit();
 		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api">https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api</a>
 			<pre><code>
 < dependency >
-	< groupId >org.seleniumhq.selenium< /groupId >
-	< artifactId >selenium-java< /artifactId >
-	< version >4.26.0< /version >
-< /dependency >
-
-< dependency >
 	< groupId >org.junit.jupiter< /groupId >
 	< artifactId >junit-jupiter-api< /artifactId >
 	< version >5.11.3< /version >
