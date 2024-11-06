@@ -233,10 +233,12 @@ public class TestAuthorization {
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
 			</p>
 		</li>
+		<li>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</li>
 		<li>Запустить автотест из командной строки с помощью Maven
-			<br>Команда
 			<pre><code>
-mvn clean test -Dtest=TestAuthorization
+E:
+cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
+"C:\Program Files\apache-maven-3.9.9\bin\mvn" clean test -Dtest=TestAuthorization
 			</code></pre>
 		</li>
 		<li></li>
@@ -244,7 +246,3 @@ mvn clean test -Dtest=TestAuthorization
 		<li></li>
 	</ol>
 </p>
-
-https://habr.com/ru/articles/590607/
-https://junit.org/junit5/docs/current/user-guide/
-https://www.baeldung.com/junit-run-from-command-line
