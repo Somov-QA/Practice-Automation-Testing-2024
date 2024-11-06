@@ -25,6 +25,7 @@ public class TestAuthorization {
     @BeforeAll
     public static void before(){
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
     }
 
     @Tag("PROD")
