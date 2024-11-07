@@ -238,10 +238,10 @@ public class TestAuthorization {
 			<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
 			<br>ссылка: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_maven_plagin.jpg">
 			</p>
 		</li>
-		<li>Создать run.bat файл для запуска автотеста из командной строки с помощью Maven
+		<li>Создать <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/selenium/java/example-junit/run.bat">run.bat</a> файл для запуска автотеста из командной строки с помощью Maven
 			<pre><code>
 E:
 cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
@@ -249,7 +249,7 @@ cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
 			</code></pre>
 			<p>Запустить файл run.bat</p>
 			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_maven_plagin.jpg">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
 			</p>
 			<p>Автотест будет запущен и выполнен.</p>
 		</li>
