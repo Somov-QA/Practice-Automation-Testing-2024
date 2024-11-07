@@ -234,12 +234,24 @@ public class TestAuthorization {
 			</p>
 		</li>
 		<li>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</li>
-		<li>Запустить автотест из командной строки с помощью Maven
+		<li>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
+			<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
+			<br>ссылка: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
+			</p>
+		</li>
+		<li>Создать run.bat файл для запуска автотеста из командной строки с помощью Maven
 			<pre><code>
 E:
 cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
 "C:\Program Files\apache-maven-3.9.9\bin\mvn" clean test -Dtest=TestAuthorization
 			</code></pre>
+			<p>Запустить файл run.bat</p>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_maven_plagin.jpg">
+			</p>
+			<p>Автотест будет запущен и выполнен.</p>
 		</li>
 		<li></li>
 		<li></li>
