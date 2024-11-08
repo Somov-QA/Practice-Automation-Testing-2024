@@ -233,6 +233,7 @@ public class TestAuthorization {
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
 			</p>
 		</li>
+		<h4>Запуск автотестов с помощью Apache Maven</h4>
 		<li>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</li>
 		<li>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
 			<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
