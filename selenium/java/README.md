@@ -8,7 +8,14 @@
 		<li>example-simple</li>
 		<li>example-junit</li>
 		<li>example-testng</li>
-		<li>demo</li>
+	</ul>
+</p>
+
+<p>
+	<h4>Документация:</h2>
+	<ul>
+		<li>Подное описание практики в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_docs">документе</a></li>
+		<li>Тест-кейсы для автотестов описаны в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_test-cases">документе</a></li>
 	</ul>
 </p>
 
@@ -258,6 +265,88 @@ cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
 			</p>
 			<p>Автотест будет запущен и выполнен.</p>
+		</li>
+	</ol>
+</p>
+<hr>
+<p>
+	<h4>Практика применения TestNG</h4>
+	<ol>
+		<li>Подключить библиотеку TestNG к проекту в файле pom.xml
+		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.testng/testng">https://mvnrepository.com/artifact/org.testng/testng</a>
+			<pre><code>
+< dependency >
+	< groupId >org.testng< /groupId >
+	< artifactId >testng< /artifactId >
+	< version >7.10.2< /version >
+	< scope >test< /scope >
+< /dependency >
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_testng.jpg">
+			</p>
+		</li>
+		<li>В папке test создать пакет tests</li>
+		<li>В пакете tests создать класс автотеста TestAuthorization.java</li>
+				<li>В файле TestAuthorization.java описать автотест следующим образом
+			<pre><code>
+package tests;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.Objects;
+
+public class TestAuthorization {
+    public static WebDriver driver;
+
+    @BeforeTest
+    public static void before(){
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+    }
+
+    @Test
+    public void testAuthorization(){
+        driver.get("https://somovstudio.github.io/test_eng.html");
+        driver.findElement(By.name("login")).sendKeys("admin");
+        driver.findElement(By.name("pass")).sendKeys("0000");
+        driver.findElement(By.id("buttonLogin")).click();
+
+        WebElement element = driver.findElement(By.id("result"));
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(d -> element.isDisplayed());
+
+        String text = driver.findElement(By.id("textarea")).getAttribute("value");
+        System.out.println(text);
+        Assert.assertEquals(text, "Authorization was successful");
+    }
+
+    @AfterTest
+    public static void after(){
+        driver.close();
+        driver.quit();
+    }
+}
+			</code></pre>
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng.jpg">
+			</p>
+		</li>
+		<li>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
+			<p align="left">
+				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng_run.jpg">
+			</p>
 		</li>
 	</ol>
 </p>

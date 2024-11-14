@@ -9,6 +9,15 @@
 		<li><a href="">php</a></li>
 	</ul>
 </p>
+
+<p>
+	<h4>Документация:</h2>
+	<ul>
+		<li>Подное описание практики в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_docs">документе</a></li>
+		<li>Тест-кейсы для автотестов описаны в <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/tree/main/_test-cases">документе</a></li>
+	</ul>
+</p>
+
 <p>
 	<h4>Полезные ссылки:</h2>
 	<ul>
