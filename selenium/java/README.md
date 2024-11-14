@@ -3,7 +3,7 @@
 Автоматизированное тестирование Selenium на языке Java
 
 <p>
-	<h4>Содержание:</h2>
+	<h4>Содержание:</h4>
 	<ul>
 		<li>example-simple</li>
 		<li>example-junit</li>
@@ -13,7 +13,7 @@
 </p>
 
 <p>
-	<h4>Полезные ссылки:</h2>
+	<h4>Полезные ссылки:</h4>
 	<ul>
 		<li>Официальная документация <a href="https://www.selenium.dev/documentation/">The Selenium Browser Automation Project</a></li>
 		<li>Документация <a href="https://www.selenium.dev/documentation/webdriver/getting_started/">Getting started</a></li>
@@ -233,7 +233,12 @@ public class TestAuthorization {
 				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
 			</p>
 		</li>
-		<h4>Запуск автотестов с помощью Apache Maven</h4>
+	</ol>
+</p>
+<hr>
+<p>
+	<h4>Запуск автотестов с помощью Apache Maven</h4>
+	<ol>
 		<li>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</li>
 		<li>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
 			<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
@@ -254,8 +259,5 @@ cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
 			</p>
 			<p>Автотест будет запущен и выполнен.</p>
 		</li>
-		<li></li>
-		<li></li>
-		<li></li>
 	</ol>
 </p>
