@@ -6,8 +6,8 @@
 	<h4>Содержание:</h2>
 	<ul>
 		<li>example-simple</li>
-		<li>example-Unittest</li>
-		<li>example-PyTest</li>
+		<li>example-unittest</li>
+		<li>example-pytest</li>
 		<li>demo</li>
 	</ul>
 </p>
