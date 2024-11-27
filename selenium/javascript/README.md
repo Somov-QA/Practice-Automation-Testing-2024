@@ -6,7 +6,6 @@
 	<h4>Содержание:</h2>
 	<ul>
 		<li>example-simple</li>
-		<li>demo</li>
 	</ul>
 </p>
 

@@ -8,7 +8,6 @@
 		<li>example-simple</li>
 		<li>example-unittest</li>
 		<li>example-pytest</li>
-		<li>demo</li>
 	</ul>
 </p>
 
@@ -99,7 +98,7 @@ def main():
 	element = driver.find_element(By.ID, 'result')
 	wait = WebDriverWait(driver, timeout=5)
 	wait.until(lambda d: element.is_displayed())
-	text = driver.find_element(By.ID, 'textarea').get_attribute('value')
+	text = driver.find_element(By.ID, 'textarea').get_property('value')
 	if text == 'Authorization was successful':
 		print("Test - SUCCESS")
 	else:
