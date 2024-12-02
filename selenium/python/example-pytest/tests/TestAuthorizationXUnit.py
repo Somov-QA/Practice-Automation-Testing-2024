@@ -21,3 +21,6 @@ class TestAuthorizationXUnit:
     def teardown_method(self):
         self.driver.close()
         self.driver.quit()
+
+if __name__ == '__main__':
+    pytest.main(["-s", "TestAuthorizationXUnit.py"])
