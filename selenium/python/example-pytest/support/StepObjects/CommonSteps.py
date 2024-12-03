@@ -7,7 +7,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from support.PageObjects.CommonPage import CommonPage
 
 class CommonSteps:
-    driver = 0
 
     def __init__(self, webdriver):
         self.driver = webdriver
