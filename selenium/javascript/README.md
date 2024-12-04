@@ -136,7 +136,7 @@ module.exports = class CommonSteps {
 }; 
 		</code></pre>
 	</p>
-	<p>Файл автотеста testAuthorization.js описать следующим образом:
+	<p>Файл автотеста testAuthorization.js описать следующим образом
 		<pre><code>
 var Helper = require('./support/Helper');
 var CommonPage = require('./support/PageObjects/CommonPage');
