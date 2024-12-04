@@ -242,28 +242,9 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
 	</p>
 	<p>Файл CommonPage.py - описаны локаторы и статичные методы</p>
-	<pre class="notranslate"><code>
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-
-class CommonPage:
-    nameLogin = "login"
-    namePassword = "pass"
-    idButtonLogin = "buttonLogin"
-    idResult = "result"
-    idTextarea = "textarea"
-
-    def getResultText(driver):
-        element = driver.find_element(By.ID, CommonPage.idResult)
-        wait = WebDriverWait(driver, timeout=5)
-        wait.until(lambda d: element.is_displayed())
-        text = driver.find_element(By.ID, 
-                     CommonPage.idTextarea).get_property('value')
-        print("Get message: " + text)
-        return text
-	</code></pre>
+	<p>Файл CommonSteps.py - описан класс методов для выполнения действий</p>
+	<p>Файл автотеста TestAuthorizationXUnit.py - используются ранее описанные паттерны</p>
 </p>
-
 <hr>
 <p>
 	<h2>Практика PyTest с применением Fixture</h2>
