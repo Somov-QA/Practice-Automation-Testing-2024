@@ -254,8 +254,22 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 <hr>
 <p>
 	<h2>Практика PyTest с применением Fixture</h2>
-	<p>
-		<pre><code>
-		</code></pre>
+	<p>Фикстуры помогают сократить дублирующийся код</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_fixture_scheme.jpg">
 	</p>
+	<p>
+		Порядок и частота вызова фикстур
+		<ol>
+			<li>session - один раз при запуске всех тестов</li>
+			<li>module - один раз в пакете</li>
+			<li>class - перед тестовым классом</li>
+			<li>function - перед каждым тестом</li>
+		</ol>
+	</p>
+	<p>В файле TestAuthorizationFixture2.py использование фикстур как Setup, Test, Teardown</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_fixture.jpg">
+	</p>
+	<p>строка yield driver - останавливает выполнение функции init_driver, запускает тест test_authorization передает в него driver и после завершения тест возвращает управление в функцию init_driver где происходит закрытие браузера независимо от того успешно ли был пройден тест или нет.</p>
 </p>
