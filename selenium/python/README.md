@@ -242,7 +242,7 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
 	</p>
 	<p>Файл CommonPage.py - описаны локаторы и статичные методы
-		<textarea rows="10" cols="45" name="text">
+<pre><code>
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -261,11 +261,11 @@ class CommonPage:
                      CommonPage.idTextarea).get_property('value')
         print("Get message: " + text)
         return text
-		</textarea>
+</code></pre>
 	</p>
-	
+	<br>
 	<p>Файл CommonSteps.py - описан класс методов для выполнения действий
-		<textarea rows="10" cols="45" name="text">
+<pre><code>
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -286,11 +286,11 @@ class CommonSteps:
                      CommonPage.namePassword).send_keys(password)
         self.driver.find_element(By.ID, 
                      CommonPage.idButtonLogin).click()
-		</textarea>
+</code></pre>
 	</p>
-	
+	<br>
 	<p>Файл автотеста TestAuthorizationXUnit.py - используются ранее описанные паттерны
-		<textarea rows="10" cols="45" name="text">
+<pre><code>
 import pytest
 from selenium import webdriver
 from support.PageObjects.CommonPage import CommonPage
@@ -315,7 +315,7 @@ class TestAuthorizationXUnit:
 
 if __name__ == '__main__':
     pytest.main(["-s", "TestAuthorizationXUnit.py"])
-		</textarea>
+</code></pre>
 	</p>
 </p>
 <hr>
