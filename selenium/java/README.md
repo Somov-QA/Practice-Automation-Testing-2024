@@ -101,82 +101,81 @@ driver.quit();
 </p>
 <hr>
 <p>
-	<h4>Практика применения JUnit</h4>
-	<ol>
-		<li>Подключить библиотеку JUnit Jupiter API к проекту в файле pom.xml
+	<h2>Практика применения JUnit</h2>
+	<p>Подключить библиотеку JUnit Jupiter API к проекту в файле pom.xml
 		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api">https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api</a>
-			<pre><code>
+		<pre><code>
 < dependency >
 	< groupId >org.junit.jupiter< /groupId >
 	< artifactId >junit-jupiter-api< /artifactId >
 	< version >5.11.3< /version >
 	< scope >test< /scope >
 < /dependency >
-			</code></pre>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_junit.jpg">
-			</p>
-		</li>
-		<li>В папке test создать пакет tests
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_package.jpg">
-			</p>
-		</li>
-		<li>В пакете tests создать класс автотеста TestAuthorization.java
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_test.jpg">
-			</p>
-		</li>
-		<li>Аннотации JUnit 5
-			<table>
-				<tr>
-				    <th>Аннотации</th>
-				    <th>Описание</th>
-			   </tr>
-			   <tr>
-				   	<td>@BeforeEach</td>
-				   	<td>Аннотированный метод будет запускаться перед каждым тестовым методом в тестовом классе.</td>
-			   </tr>
-			   <tr>
-				   	<td>@AfterEach</td>
-				   	<td>Аннотированный метод будет запускаться после каждого тестового метода в тестовом классе.</td>
-			   </tr>
-			   <tr>
-				   	<td>@BeforeAll</td>
-				   	<td>Аннотированный метод будет запущен перед всеми тестовыми методами в тестовом классе. Этот метод должен быть статическим.</td>
-			   </tr>
-			   <tr>
-				   	<td>@AfterAll</td>
-				   	<td>Аннотированный метод будет запущен после всех тестовых методов в тестовом классе. Этот метод должен быть статическим.</td>
-			   </tr>
-			   <tr>
-				   	<td>@Test</td>
-				   	<td>Он используется, чтобы пометить метод как тест junit.</td>
-			   </tr>
-			   <tr>
-				   	<td>@DisplayName</td>
-				   	<td>Используется для предоставления любого настраиваемого отображаемого имени для тестового класса или тестового метода</td>
-			   </tr>
-			   <tr>
-				   	<td>@Disable</td>
-				   	<td>Он используется для отключения или игнорирования тестового класса или тестового метода из набора тестов.</td>
-			   </tr>
-			   <tr>
-				   	<td>@Nested</td>
-				   	<td>Используется для создания вложенных тестовых классов</td>
-			   </tr>
-			   <tr>
-				   	<td>@Tag</td>
-				   	<td>Пометьте методы тестирования или классы тестов тегами для обнаружения и фильтрации тестов.</td>
-			   </tr>
-			   <tr>
-				   	<td>@TestFactory</td>
-				   	<td>Отметить метод - это тестовая фабрика для динамических тестов.</td>
-			   </tr>
-			</table>
-		</li>
-		<li>В файле TestAuthorization.java описать автотест следующим образом
-			<pre><code>
+		</code></pre>
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_junit.jpg">
+		</p>
+	</p>
+	<p>В папке test создать пакет tests
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_package.jpg">
+		</p>
+	</p>
+	<p>В пакете tests создать класс автотеста TestAuthorization.java
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_create_test.jpg">
+		</p>
+	</p>
+	<p>Аннотации JUnit 5
+		<table>
+			<tr>
+				<th>Аннотации</th>
+				<th>Описание</th>
+		   </tr>
+		   <tr>
+				<td>@BeforeEach</td>
+				<td>Аннотированный метод будет запускаться перед каждым тестовым методом в тестовом классе.</td>
+		   </tr>
+		   <tr>
+				<td>@AfterEach</td>
+				<td>Аннотированный метод будет запускаться после каждого тестового метода в тестовом классе.</td>
+		   </tr>
+		   <tr>
+				<td>@BeforeAll</td>
+				<td>Аннотированный метод будет запущен перед всеми тестовыми методами в тестовом классе. Этот метод должен быть статическим.</td>
+		   </tr>
+		   <tr>
+				<td>@AfterAll</td>
+				<td>Аннотированный метод будет запущен после всех тестовых методов в тестовом классе. Этот метод должен быть статическим.</td>
+		   </tr>
+		   <tr>
+				<td>@Test</td>
+				<td>Он используется, чтобы пометить метод как тест junit.</td>
+		   </tr>
+		   <tr>
+				<td>@DisplayName</td>
+				<td>Используется для предоставления любого настраиваемого отображаемого имени для тестового класса или тестового метода</td>
+		   </tr>
+		   <tr>
+				<td>@Disable</td>
+				<td>Он используется для отключения или игнорирования тестового класса или тестового метода из набора тестов.</td>
+		   </tr>
+		   <tr>
+				<td>@Nested</td>
+				<td>Используется для создания вложенных тестовых классов</td>
+		   </tr>
+		   <tr>
+				<td>@Tag</td>
+				<td>Пометьте методы тестирования или классы тестов тегами для обнаружения и фильтрации тестов.</td>
+		   </tr>
+		   <tr>
+				<td>@TestFactory</td>
+				<td>Отметить метод - это тестовая фабрика для динамических тестов.</td>
+		   </tr>
+		</table>
+	</p>
+	<p>В файле TestAuthorization.java описать автотест следующим образом
+		<pre><code>
 package tests;
 
 import org.junit.jupiter.api.AfterAll;
@@ -230,66 +229,62 @@ public class TestAuthorization {
         driver.quit();
     }
 }
-			</code></pre>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit.jpg">
-			</p>
-		</li>
-		<li>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
-			</p>
-		</li>
-	</ol>
+		</code></pre>
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit.jpg">
+		</p>
+	</p>
+	<p>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_run.jpg">
+		</p>
+	</p>
 </p>
 <hr>
 <p>
-	<h4>Запуск автотестов с помощью Apache Maven</h4>
-	<ol>
-		<li>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</li>
-		<li>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
-			<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
-			<br>ссылка: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_maven_plagin.jpg">
-			</p>
-		</li>
-		<li>Создать <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/selenium/java/example-junit/run.bat">run.bat</a> файл для запуска автотеста из командной строки с помощью Maven
-			<pre><code>
+	<h2>Запуск автотестов с помощью Apache Maven</h2>
+	<p>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</p>
+	<p>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
+		<br>ссылка: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin
+		<br>ссылка: https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_maven_plagin.jpg">
+		</p>
+	</p>
+	<p>Создать <a href="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/selenium/java/example-junit/run.bat">run.bat</a> файл для запуска автотеста из командной строки с помощью Maven
+		<pre><code>
 E:
 cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\java\example-junit
 "C:\Program Files\apache-maven-3.9.9\bin\mvn" clean test -Dtest=TestAuthorization
-			</code></pre>
-			<p>Запустить файл run.bat</p>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
-			</p>
-			<p>Автотест будет запущен и выполнен.</p>
-		</li>
-	</ol>
+		</code></pre>
+		<p>Запустить файл run.bat</p>
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_junit_console_run.jpg">
+		</p>
+		<p>Автотест будет запущен и выполнен.</p>
+	</p>
 </p>
 <hr>
 <p>
-	<h4>Практика применения TestNG</h4>
-	<ol>
-		<li>Подключить библиотеку TestNG к проекту в файле pom.xml
+	<h2>Практика применения TestNG</h2>
+	<p>Подключить библиотеку TestNG к проекту в файле pom.xml
 		<br> ссылка: <a href="https://mvnrepository.com/artifact/org.testng/testng">https://mvnrepository.com/artifact/org.testng/testng</a>
-			<pre><code>
+		<pre><code>
 < dependency >
 	< groupId >org.testng< /groupId >
 	< artifactId >testng< /artifactId >
 	< version >7.10.2< /version >
 	< scope >test< /scope >
 < /dependency >
-			</code></pre>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_testng.jpg">
-			</p>
-		</li>
-		<li>В папке test создать пакет tests</li>
-		<li>В пакете tests создать класс автотеста TestAuthorization.java</li>
-				<li>В файле TestAuthorization.java описать автотест следующим образом
-			<pre><code>
+		</code></pre>
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_pom_testng.jpg">
+		</p>
+	</p>
+	<p>В папке test создать пакет tests</p>
+	<p>В пакете tests создать класс автотеста TestAuthorization.java</p>
+	<p>В файле TestAuthorization.java описать автотест следующим образом
+		<pre><code>
 package tests;
 
 import org.testng.Assert;
@@ -338,15 +333,14 @@ public class TestAuthorization {
         driver.quit();
     }
 }
-			</code></pre>
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng.jpg">
-			</p>
-		</li>
-		<li>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
-			<p align="left">
-				<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng_run.jpg">
-			</p>
-		</li>
-	</ol>
+		</code></pre>
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng.jpg">
+		</p>
+	</p>
+	<p>Запустить автотеста в среде IntelliJ IDEA и убедится что всё работает корректно
+		<p align="left">
+			<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_test_testng_run.jpg">
+		</p>
+	</p>
 </p>
