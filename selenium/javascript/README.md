@@ -137,14 +137,13 @@ module.exports = class CommonSteps {
 		</code></pre>
 	</p>
 	<p>Файл автотеста testAuthorization.js описать следующим образом
-		<pre><code>
+<pre><code>
 var Helper = require('./support/Helper');
 var CommonPage = require('./support/PageObjects/CommonPage');
 var CommonSteps = require('./support/StepObjects/CommonSteps');
 
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
-		</code></pre>
-		<pre><code>
+
 (async function TestAuthorization() {
     let driver = await new Builder().forBrowser(Browser.CHROME).build();
     let tester = new CommonSteps(driver);
@@ -161,7 +160,7 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
         await driver.quit();
     }
 })()
-		</code></pre>	
+</code></pre>	
 	</p>
 	<p align="left">
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns.jpg">
