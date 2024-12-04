@@ -84,3 +84,10 @@ node test.js
 		</li>
 	</ol>
 </p>
+
+<hr>
+
+<p>
+	<h2>Описание паттернов PageObjects и StepObjects</h2>
+
+</p>
