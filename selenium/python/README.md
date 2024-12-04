@@ -241,10 +241,8 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 	<p align="left">
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
 	</p>
-	<p>
-		Файл CommonPage.py - описаны локаторы и статичные методы
-		<pre>
-		<code>
+	<p>Файл CommonPage.py - описаны локаторы и статичные методы</p>
+	<pre class="notranslate"><code>
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -263,10 +261,7 @@ class CommonPage:
                      CommonPage.idTextarea).get_property('value')
         print("Get message: " + text)
         return text
-		</code>
-		</pre>
-	</p>
-
+	</code></pre>
 </p>
 <hr>
 <p>
