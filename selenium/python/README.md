@@ -140,7 +140,6 @@ python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\examplesi
 	<p>В файле TestAuthorization.py описать автотест следующим образом
 		<pre><code>
 import unittest
-
 from selenium import  webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -160,12 +159,9 @@ class MyTestCase(unittest.TestCase):
         wait.until(lambda d: element.is_displayed())
         text = driver.find_element(By.ID, 'textarea').get_property('value')
         print("Get message: " + text)
-
         self.assertEqual(text, 'Authorization was successful')
-
         driver.close()
         driver.quit()
-
 
 if __name__ == '__main__':
     unittest.main()
@@ -197,7 +193,6 @@ pytest --version
 	<p>В файле TestAuthorization.py описать автотест следующим образом
 		<pre><code>
 import pytest
-
 from selenium import  webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -216,12 +211,9 @@ def test_authorization():
     wait.until(lambda d: element.is_displayed())
     text = driver.find_element(By.ID, 'textarea').get_property('value')
     print("Get message: " + text)
-
     assert text == 'Authorization was successful', "Получено некорректное сообщение"
-
     driver.close()
     driver.quit()
-
 
 if __name__ == '__main__':
     pytest.main(["-s", "TestAuthorization.py"])
@@ -244,5 +236,103 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 </p>
 <hr>
 <p>
+	<h2>Практика PyTest в стиле xUnit</h2>
+	<p>Описание паттернов PageObjects и StepObjects</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
+	</p>
+	<p>Файл CommonPage.py - описаны локаторы и статичные методы
+		<pre><code>
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 
+class CommonPage:
+    nameLogin = "login"
+    namePassword = "pass"
+    idButtonLogin = "buttonLogin"
+    idResult = "result"
+    idTextarea = "textarea"
+
+    def getResultText(driver):
+        element = driver.find_element(By.ID, CommonPage.idResult)
+        wait = WebDriverWait(driver, timeout=5)
+        wait.until(lambda d: element.is_displayed())
+        text = driver.find_element(By.ID, 
+                     CommonPage.idTextarea).get_property('value')
+        print("Get message: " + text)
+        return text
+		</code></pre>
+	</p>
+	<p>Файл CommonSteps.py - описан класс методов для выполнения действий
+		<pre><code>
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.ie.webdriver import WebDriver
+from selenium.webdriver.support.wait import WebDriverWait
+
+from support.PageObjects.CommonPage import CommonPage
+
+class CommonSteps:
+
+    def __init__(self, webdriver):
+        self.driver = webdriver
+
+    def sendForm(self, login, password):
+        self.driver.find_element(By.NAME, 
+                     CommonPage.nameLogin).send_keys(login)
+        self.driver.find_element(By.NAME, 
+                     CommonPage.namePassword).send_keys(password)
+        self.driver.find_element(By.ID, 
+                     CommonPage.idButtonLogin).click()
+		</code></pre>
+	</p>
+	<p>Файл автотеста TestAuthorizationXUnit.py - используются ранее описанные паттерны
+		<pre><code>
+import pytest
+from selenium import webdriver
+from support.PageObjects.CommonPage import CommonPage
+from support.StepObjects.CommonSteps import CommonSteps
+
+class TestAuthorizationXUnit:
+
+    def setup_method(self):
+        self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
+
+    def test(self):
+        tester = CommonSteps(self.driver)
+        tester.driver.get('https://somovstudio.github.io/test_eng.html')
+        tester.sendForm( 'admin', '0000')
+        text = CommonPage.getResultText(tester.driver)
+        assert text == 'Authorization was successful', "Получено некорректное сообщение"
+
+    def teardown_method(self):
+        self.driver.close()
+        self.driver.quit()
+
+if __name__ == '__main__':
+    pytest.main(["-s", "TestAuthorizationXUnit.py"])
+		</code></pre>
+	</p>
+	<p>
+		<pre><code>
+		</code></pre>
+	</p>
+	<p>
+		<pre><code>
+		</code></pre>
+	</p>
+	<p>
+		<pre><code>
+		</code></pre>
+	</p>
+</p>
+<hr>
+<p>
+	<h2>Практика PyTest с применением Fixture</h2>
+	<p>
+		<pre><code>
+		</code></pre>
+	</p>
 </p>
