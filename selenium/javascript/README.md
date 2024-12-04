@@ -119,4 +119,21 @@ module.exports = class CommonPage {
 }; 
 		</code></pre>
 	</p>
+	<p>Файл CommonSteps.js - описан класс методов для выполнения действий
+		<pre><code>
+const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
+
+module.exports = class CommonSteps {
+    constructor(webdriver) {
+        this.driver = webdriver;
+    }
+
+    async sendFormAsync(login, password) {
+        await this.driver.findElement(By.name('login')).sendKeys('admin');
+        await this.driver.findElement(By.name('pass')).sendKeys('0000');
+        await this.driver.findElement(By.id('buttonLogin')).click();
+    }
+}; 
+		</code></pre>
+	</p>
 </p>
