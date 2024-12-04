@@ -89,7 +89,9 @@ node test.js
 
 <p>
 	<h2>Описание паттернов PageObjects и StepObjects</h2>
+	
 	<p>Создать папку support со следующей структурой:</p>
+	
 	<p>Файл Helper.js - описаны константы
 		<pre><code>
 module.exports = class Helper {
@@ -99,6 +101,7 @@ module.exports = class Helper {
 }
 		</code></pre>
 	</p>
+	
 	<p>Файл CommonPage.js - описаны локаторы и статичные методы
 		<pre><code>
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
@@ -119,6 +122,7 @@ module.exports = class CommonPage {
 }; 
 		</code></pre>
 	</p>
+	
 	<p>Файл CommonSteps.js - описан класс методов для выполнения действий
 		<pre><code>
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
@@ -136,8 +140,9 @@ module.exports = class CommonSteps {
 }; 
 		</code></pre>
 	</p>
+	
 	<p>Файл автотеста testAuthorization.js описать следующим образом
-<pre><code>
+		<pre><code>
 var Helper = require('./support/Helper');
 var CommonPage = require('./support/PageObjects/CommonPage');
 var CommonSteps = require('./support/StepObjects/CommonSteps');
@@ -160,11 +165,13 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
         await driver.quit();
     }
 })()
-</code></pre>	
+		</code></pre>	
 	</p>
+	
 	<p align="left">
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns.jpg">
 	</p>
+	
 	<p>Запуск автотест командой
 		<pre><code>
 node testAuthorization.js
