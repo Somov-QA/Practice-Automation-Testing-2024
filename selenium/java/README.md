@@ -242,6 +242,135 @@ public class TestAuthorization {
 </p>
 <hr>
 <p>
+	<h2>Описание паттернов PageObjects и StepObjects</h2>
+	<p>Описать паттерны PageObjects и StepObjects организовав структуру пакета support следующим образом:</p>
+	<p>Файл Helper.java - описаны константы
+		<pre><code>
+package support;
+
+public class Helper {
+    public static String URL = "https://somovstudio.github.io/test_eng.html";
+    public static String LOGIN = "admin";
+    public static String PASSWORD = "0000";
+}
+		</code></pre>
+	</p>
+	<p>Файл CommonPage.java - описаны локаторы и статичные методы
+		<pre><code>
+package support.PageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class CommonPage {
+    public static String nameLogin = "login";
+    public static String namePassword  = "pass";
+    public static String idButtonLogin  = "buttonLogin";
+    public static String idResult  = "result";
+    public static String idTextarea  = "textarea";
+
+    public static String getResultText(WebDriver driver){
+        WebElement element = driver.findElement(By.id(CommonPage.
+                               idResult));
+        Wait<WebDriver> wait = new WebDriverWait(driver,
+                               Duration.ofSeconds(5));
+        wait.until(d -> element.isDisplayed());
+        String text = driver.findElement(By.id(CommonPage.
+                               idTextarea)).getAttribute("value");
+        System.out.println("Get message: " + text);
+        return text;
+    }
+}
+		</code></pre>
+	</p>
+	<p>Файл CommonSteps.java - описан класс методов для выполнения действий
+		<pre><code>
+package support.StepObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import support.PageObjects.CommonPage;
+
+public class CommonSteps {
+    public final WebDriver driver;
+
+    public CommonSteps(WebDriver webdriver){
+        driver = webdriver;
+    }
+
+    public void sendForm(String login, String password){
+        driver.findElement(
+              By.name(CommonPage.nameLogin)).sendKeys(login);
+        driver.findElement(
+              By.name(CommonPage.namePassword)).sendKeys(password);
+        driver.findElement(
+              By.id(CommonPage.idButtonLogin)).click();
+    }
+}
+		</code></pre>
+	</p>
+	<p>Файл автотеста TestAuthorization2.java - используются ранее описанные паттерны
+		<pre><code>
+package tests;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import support.PageObjects.CommonPage;
+import support.StepObjects.CommonSteps;
+import support.Helper;
+
+public class TestAuthorization2 {
+
+    public static CommonSteps tester;
+
+    @BeforeAll
+    public static void before(){
+        tester = new CommonSteps(new ChromeDriver());
+        tester.driver.manage().window().maximize();
+    }
+
+    @Tag("PROD")
+    @Test
+    public void testAuthorization(){
+        tester.driver.get(Helper.URL);
+        tester.sendForm(Helper.LOGIN, Helper.PASSWORD);
+        String text = CommonPage.getResultText(tester.driver);
+        Assertions.assertEquals(text, "Authorization was successful");
+    }
+
+    @AfterAll
+    public static void after(){
+        tester.driver.close();
+        tester.driver.quit();
+    }
+}
+		</code></pre>
+	</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/java_patterns.jpg">
+	</p>
+</p>
+<hr>
+<p>
 	<h2>Запуск автотестов с помощью Apache Maven</h2>
 	<p>Скачать и установить <a href="https://maven.apache.org/download.cgi">Apache Maven</a> (архив: apache-maven-3.9.9-bin.zip)</p>
 	<p>Подключить плагин Maven Surefire Plugin к проекту в файле pom.xml
