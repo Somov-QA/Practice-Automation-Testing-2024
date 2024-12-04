@@ -241,7 +241,10 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 	<p align="left">
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
 	</p>
-	<p>Файл CommonPage.py - описаны локаторы и статичные методы
+	<p>
+		Файл CommonPage.py - описаны локаторы и статичные методы
+		<pre>
+		<code>
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -260,57 +263,10 @@ class CommonPage:
                      CommonPage.idTextarea).get_property('value')
         print("Get message: " + text)
         return text
+		</code>
+		</pre>
 	</p>
-	<br>
-	<p>Файл CommonSteps.py - описан класс методов для выполнения действий
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.ie.webdriver import WebDriver
-from selenium.webdriver.support.wait import WebDriverWait
 
-from support.PageObjects.CommonPage import CommonPage
-
-class CommonSteps:
-
-    def __init__(self, webdriver):
-        self.driver = webdriver
-
-    def sendForm(self, login, password):
-        self.driver.find_element(By.NAME, 
-                     CommonPage.nameLogin).send_keys(login)
-        self.driver.find_element(By.NAME, 
-                     CommonPage.namePassword).send_keys(password)
-        self.driver.find_element(By.ID, 
-                     CommonPage.idButtonLogin).click()
-	</p>
-	<br>
-	<p>Файл автотеста TestAuthorizationXUnit.py - используются ранее описанные паттерны
-import pytest
-from selenium import webdriver
-from support.PageObjects.CommonPage import CommonPage
-from support.StepObjects.CommonSteps import CommonSteps
-
-class TestAuthorizationXUnit:
-
-    def setup_method(self):
-        self.driver = webdriver.Chrome()
-        self.driver.maximize_window()
-
-    def test(self):
-        tester = CommonSteps(self.driver)
-        tester.driver.get('https://somovstudio.github.io/test_eng.html')
-        tester.sendForm( 'admin', '0000')
-        text = CommonPage.getResultText(tester.driver)
-        assert text == 'Authorization was successful', "Получено некорректное сообщение"
-
-    def teardown_method(self):
-        self.driver.close()
-        self.driver.quit()
-
-if __name__ == '__main__':
-    pytest.main(["-s", "TestAuthorizationXUnit.py"])
-	</p>
 </p>
 <hr>
 <p>
