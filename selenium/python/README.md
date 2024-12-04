@@ -234,11 +234,8 @@ if __name__ == '__main__':
 	<p>Запуск автотеста через консоль
 		<pre><code>
 E:
-
 cd E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\example-pytest\.venv\Scripts
-
 pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\example-pytest\tests\TestAuthorization.py
-
 		</code></pre>
 	</p>
 	<p align="left">
