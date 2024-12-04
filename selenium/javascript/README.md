@@ -143,7 +143,8 @@ var CommonPage = require('./support/PageObjects/CommonPage');
 var CommonSteps = require('./support/StepObjects/CommonSteps');
 
 const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
-
+		</code></pre>
+		<pre><code>
 (async function TestAuthorization() {
     let driver = await new Builder().forBrowser(Browser.CHROME).build();
     let tester = new CommonSteps(driver);
