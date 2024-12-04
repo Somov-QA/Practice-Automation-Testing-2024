@@ -162,4 +162,12 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 })()
 		</code></pre>	
 	</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns.jpg">
+	</p>
+	<p>Запуск автотест командой
+		<pre><code>
+node testAuthorization.js
+		</code></pre>
+	</p>
 </p>
