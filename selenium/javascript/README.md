@@ -89,9 +89,7 @@ node test.js
 
 <p>
 	<h2>Описание паттернов PageObjects и StepObjects</h2>
-	
 	<p>Создать папку support со следующей структурой:</p>
-	
 	<p>Файл Helper.js - описаны константы
 		<pre><code>
 module.exports = class Helper {
@@ -101,80 +99,5 @@ module.exports = class Helper {
 }
 		</code></pre>
 	</p>
-	
-	<p>Файл CommonPage.js - описаны локаторы и статичные методы
-		<pre><code>
-const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
 
-module.exports = class CommonPage {
-    static nameLogin = "login";
-    static namePassword = "pass";
-    static idButtonLogin = "buttonLogin";
-    static idResult = "result";
-    static idTextarea = "textarea";
-
-    static async getResultText(driver) {
-        let element = await driver.findElement(By.id('result'));
-        await driver.wait(until.elementIsVisible(element), 5000);
-        let text = await driver.findElement(By.id('textarea')).getAttribute('value');
-        return text;
-    }
-}; 
-		</code></pre>
-	</p>
-	
-	<p>Файл CommonSteps.js - описан класс методов для выполнения действий
-		<pre><code>
-const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
-
-module.exports = class CommonSteps {
-    constructor(webdriver) {
-        this.driver = webdriver;
-    }
-
-    async sendFormAsync(login, password) {
-        await this.driver.findElement(By.name('login')).sendKeys('admin');
-        await this.driver.findElement(By.name('pass')).sendKeys('0000');
-        await this.driver.findElement(By.id('buttonLogin')).click();
-    }
-}; 
-		</code></pre>
-	</p>
-	
-	<p>Файл автотеста testAuthorization.js описать следующим образом
-		<pre><code>
-var Helper = require('./support/Helper');
-var CommonPage = require('./support/PageObjects/CommonPage');
-var CommonSteps = require('./support/StepObjects/CommonSteps');
-
-const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
-
-(async function TestAuthorization() {
-    let driver = await new Builder().forBrowser(Browser.CHROME).build();
-    let tester = new CommonSteps(driver);
-    try {
-        await driver.get(Helper.URL);
-        await tester.sendFormAsync(Helper.LOGIN, Helper.PASSWORD);
-        let text = await CommonPage.getResultText(tester.driver);
-        if (text == 'Authorization was successful'){
-            console.log('Test - SUCCESS');
-        }else{
-            throw new Error('Test - FAILED');
-        }
-    } finally {
-        await driver.quit();
-    }
-})()
-		</code></pre>	
-	</p>
-	
-	<p align="left">
-		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns.jpg">
-	</p>
-	
-	<p>Запуск автотест командой
-		<pre><code>
-node testAuthorization.js
-		</code></pre>
-	</p>
 </p>
