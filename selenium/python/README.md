@@ -263,6 +263,7 @@ class CommonPage:
         return text
 	</code></pre>
 </p>
+
 <hr>
 <p>
 	<h2>Практика PyTest с применением Fixture</h2>
