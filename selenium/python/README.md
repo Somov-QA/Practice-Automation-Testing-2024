@@ -238,12 +238,18 @@ pytest -s -v E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\exa
 <p>
 	<h2>Практика PyTest в стиле xUnit</h2>
 	<p>Описание паттернов PageObjects и StepObjects</p>
-	<p align="left">
-		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_patterns.jpg">
-	</p>
 	<p>Файл CommonPage.py - описаны локаторы и статичные методы</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns_page.jpg">
+	</p>
 	<p>Файл CommonSteps.py - описан класс методов для выполнения действий</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns_steps.jpg">
+	</p>
 	<p>Файл автотеста TestAuthorizationXUnit.py - используются ранее описанные паттерны</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/javascript_patterns_test.jpg">
+	</p>
 </p>
 <hr>
 <p>
