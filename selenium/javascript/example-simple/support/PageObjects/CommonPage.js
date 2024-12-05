@@ -7,7 +7,7 @@ module.exports = class CommonPage {
     static idResult = "result";
     static idTextarea = "textarea";
 
-    static async getResultText(driver) {
+    static async getResultTextAsync(driver) {
         let element = await driver.findElement(By.id('result'));
         await driver.wait(until.elementIsVisible(element), 5000);
         let text = await driver.findElement(By.id('textarea')).getAttribute('value');

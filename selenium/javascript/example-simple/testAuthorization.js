@@ -10,7 +10,7 @@ const { Builder, Browser, By, Key, until } = require('selenium-webdriver');
     try {
         await driver.get(Helper.URL);
         await tester.sendFormAsync(Helper.LOGIN, Helper.PASSWORD);
-        let text = await CommonPage.getResultText(tester.driver);
+        let text = await CommonPage.getResultTextAsync(tester.driver);
         if (text == 'Authorization was successful'){
             console.log('Test - SUCCESS');
         }else{
