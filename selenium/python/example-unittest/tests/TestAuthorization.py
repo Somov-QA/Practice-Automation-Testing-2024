@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.ie.webdriver import WebDriver
 from selenium.webdriver.support.wait import WebDriverWait
 
-class MyTestCase(unittest.TestCase):
+class TestAuthorization(unittest.TestCase):
     def test_something(self):
         driver = webdriver.Chrome()
         driver.maximize_window()
