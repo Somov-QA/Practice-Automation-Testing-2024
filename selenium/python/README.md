@@ -137,35 +137,9 @@ python E:\Git\SomovQA\Practice-Automation-Testing-2024\selenium\python\examplesi
 	<p align="left">
 		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_create_unit_test.jpg">
 	</p>
-	<p>В файле TestAuthorization.py описать автотест следующим образом
-		<pre><code>
-import unittest
-from selenium import  webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.ie.webdriver import WebDriver
-from selenium.webdriver.support.wait import WebDriverWait
-
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        driver = webdriver.Chrome()
-        driver.maximize_window()
-        driver.get('https://somovstudio.github.io/test_eng.html')
-        driver.find_element(By.NAME, 'login').send_keys('admin')
-        driver.find_element(By.NAME, 'pass').send_keys('0000')
-        driver.find_element(By.ID, 'buttonLogin').click()
-        element = driver.find_element(By.ID, 'result')
-        wait = WebDriverWait(driver, timeout=5)
-        wait.until(lambda d: element.is_displayed())
-        text = driver.find_element(By.ID, 'textarea').get_property('value')
-        print("Get message: " + text)
-        self.assertEqual(text, 'Authorization was successful')
-        driver.close()
-        driver.quit()
-
-if __name__ == '__main__':
-    unittest.main()
-		</code></pre>
+	<p>В файле TestAuthorization.py описать автотест следующим образом</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_unittest.jpg">
 	</p>
 	<p>Запуск автотеста в редакторе PyCharm или в консоли командой:
 		<pre><code>
@@ -190,34 +164,9 @@ pytest --version
 	</p>
 	<p>В корне проекта создать пакет с именем tests</p>
 	<p>В пакете tests создать файл (Python file) с именем TestAuthorization.py</p>
-	<p>В файле TestAuthorization.py описать автотест следующим образом
-		<pre><code>
-import pytest
-from selenium import  webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.ie.webdriver import WebDriver
-from selenium.webdriver.support.wait import WebDriverWait
-
-def test_authorization():
-    driver = webdriver.Chrome()
-    driver.maximize_window()
-    driver.get('https://somovstudio.github.io/test_eng.html')
-    driver.find_element(By.NAME, 'login').send_keys('admin')
-    driver.find_element(By.NAME, 'pass').send_keys('0000')
-    driver.find_element(By.ID, 'buttonLogin').click()
-    element = driver.find_element(By.ID, 'result')
-    wait = WebDriverWait(driver, timeout=5)
-    wait.until(lambda d: element.is_displayed())
-    text = driver.find_element(By.ID, 'textarea').get_property('value')
-    print("Get message: " + text)
-    assert text == 'Authorization was successful', "Получено некорректное сообщение"
-    driver.close()
-    driver.quit()
-
-if __name__ == '__main__':
-    pytest.main(["-s", "TestAuthorization.py"])
-		</code></pre>
+	<p>В файле TestAuthorization.py описать автотест следующим образом</p>
+	<p align="left">
+		<img src="https://github.com/Somov-QA/Practice-Automation-Testing-2024/blob/main/_images/python_pytest.jpg">
 	</p>
 	<p>После установки pytest.exe будет находдится по адресу \example-pytest\.venv\Scripts</p>
 	<p align="left">
